@@ -57,14 +57,14 @@ public class Actions_demoqa extends Locators_demoqa {
     public void isDisplayed_SelectedMessage() {
         Alert alert = Driver.get().switchTo().alert();
         alert.dismiss();
-        selectedMessage_loc.isDisplayed();
+        Assert.assertTrue(selectedMessage_loc.isDisplayed());
     }
 
     public void isDisplayed_enterMessage() {
         Alert alert = Driver.get().switchTo().alert();
         alert.sendKeys("Jhon Doe");
         alert.accept();
-        enteredMessage_loc.isDisplayed();
+        Assert.assertTrue(enteredMessage_loc.isDisplayed());
     }
 
     public void dragDropBox() {
