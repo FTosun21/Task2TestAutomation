@@ -7,7 +7,7 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        plugin = {"html:target/default-html-reports"   },
+        plugin = {"html:target/failed-html-report"   },
         features ="@target/rerun.txt",
         glue = "com/keypoint/step_definitions"
 )

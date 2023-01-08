@@ -3,7 +3,7 @@ Feature: user should be able to login with valid credential
 
   Background:
     Given The user is on the login page
-
+@wip
   Scenario Outline: positive scenario
     When The user enters "<valid username>" and "<valid password>"  credential
     Then The user should be able to login
